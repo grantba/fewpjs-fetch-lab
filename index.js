@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+  fetchBooks();
+  fifthBook();
+  specificCharacter();
+  pagesInEachBook();
+});
+
 function fetchBooks() {
   // To pass the tests, don't forget to return your fetch!
   return fetch('https://anapioficeandfire.com/api/books')
@@ -13,13 +20,6 @@ function renderBooks(books) {
     main.appendChild(h2);
   });
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks();
-  fifthBook();
-  specificCharacter();
-  pagesInEachBook();
-});
 
 // 1.	The 5th book in the series
 function fifthBook() {
